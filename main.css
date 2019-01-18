@@ -4,13 +4,19 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: beige;
+}
+
 .main-nav {
     position: fixed;
     top: 0;
     width: 100%;
     text-align: center;
-    background-color: rgba(200, 255, 255, 100);
     margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    background-color: #fff;
 }
 
 .main-nav__main-list-container {
@@ -42,12 +48,12 @@
 .main-nav__list-container_item>a {
     font-size: 3vh;
     text-decoration: none;
-    color: #000;
+    color: #2c2c54;
     transition: .3s;
 }
 
 .main-nav__list-container_item>a:hover, .main-nav__list-container_yacht-category_yachts--open>li>a:hover {
-    color: orangered;
+    color: #34ace0;
 }
 
 .main-nav__list-container_yacht-category_yachts {
@@ -79,6 +85,15 @@
 .section {
     margin-top: 30px;
     border: 1px solid black;
+}
+
+.section-hero {
+    margin-top: 50px;
+    height: 90vh;
+    background-image: url("./img/hero-backgroundImage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 @media only screen and (min-width: 960px) {
